@@ -1,0 +1,17 @@
+[
+	{
+		"id": "ingest-pcap",
+		"execute-command": "/ingest.sh",
+		"command-working-directory": "/pcaps/",
+		"include-command-output-in-response": true,
+		"include-command-output-in-response-on-error": true,
+		"pass-arguments-to-command":
+		[
+			{
+				"source": "url",
+				"name": "file",
+				"envname": "INPUT"
+			}
+		]
+	}
+]
